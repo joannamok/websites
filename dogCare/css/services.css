@@ -1,0 +1,139 @@
+/************ general *******************************************/
+/*side nav*/
+.panel{
+	position: fixed;
+	top:100px;
+	right:1%;
+
+}
+/*all rows*/
+.row{
+	margin-bottom: 40px;
+}
+/*side nav*/
+.panel{
+	position: fixed;
+	top:100px;
+	right:1%;
+}
+/*image section hover*/
+section img:hover{
+	-webkit-transform:scale(1.5,1.5);
+	-moz-transform:scale(1.5,1.5);
+	-o-transform:scale(1.5,1.5);
+	-ms-transform:scale(1.5,1.5);
+	transform:scale(1.5,1.5);	
+}
+
+/************ snack gallery *******************************************/
+/*gallery container*/
+#snackgal{
+	clear: both;
+	overflow: hidden;
+	
+}
+
+/*image containers*/
+.snackimg{
+	position: relative;
+	margin-bottom: 40px;
+}
+/*transitions*/
+.name{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition:opacity 1s ease-in;
+	-moz-transition:opacity 1s ease-in;
+	-o-transition:opacity 1s ease-in;
+	transition:opacity 1s ease-in;
+}
+/*names of snacks on image hover*/
+.name h4{
+	margin-top:120px;
+	padding: 5px 10%;/*20px*/
+	background-color: #53324F ;
+	width: 90%;
+	color: #DFDFE9;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+/*image hover*/
+.name:hover{
+	opacity: .8;
+}
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		/*side nav*/
+		aside{
+			display: none;
+		}	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+			/*side nav*/
+		aside{
+			display: none;
+		}
+		/*removes section image hover*/
+		section img:hover{
+			-webkit-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			transform:scale(1,1);	
+		}
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+			/*side nav*/
+		aside{
+			display: none;
+		}
+		/*removes section image hover*/
+		section img:hover{
+			-webkit-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			transform:scale(1,1);	
+		}
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+			/*side nav*/
+		aside{
+			display: none;
+		}
+		/*removes section image hover*/
+		section img:hover{
+			-webkit-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			transform:scale(1,1);	
+		}
+		
+		
+	}
+

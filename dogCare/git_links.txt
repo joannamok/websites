@@ -1,0 +1,7 @@
+Joanna Moktarezadeh
+
+Git Links
+
+Git Repo: https://github.com/joannamok/DWS2/tree/gh-pages/SelectorsB9
+
+Git gh-page: http://joannamok.github.io/DWS2/SelectorsB9/index.html

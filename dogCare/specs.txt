@@ -1,0 +1,22 @@
+Colors: Adove Kuler SoundCheck Soft
+purple: #53324F 	rgb(83 50 79)
+purple dark: #2A1928 	rgb(42 25 40)
+green: #668D6E
+dark green: #334737
+yellow: #F2E0A0
+orange: #F19B7A
+mellon: #F0756E
+
+white: #DFDFE9 rgb(223 223 233)
+darker white: #A7A7AF
+
+gray shadow: #383838
+
+textbox gradient:
+background: #FBFBFC;
+	background: -webkit-linear-gradient(#FBFBFC, #ECECF2);
+	background: -moz-linear-gradient(#FBFBFC, #ECECF2);
+	background: -o-linear-gradient(#FBFBFC, #ECECF2);
+	background: -ms-linear-gradient(#FBFBFC, #ECECF2);
+	background: linear-gradient(#FBFBFC, #ECECF2);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBFBFC', endColorstr='#ECECF2',GradientType=0 );

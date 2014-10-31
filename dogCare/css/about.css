@@ -1,0 +1,71 @@
+/*************** table section ************************/
+/**table*/
+table{
+	border:1px solid #53324F;
+	margin: 40px 0 40px 0;
+}
+/*table head background*/
+th{
+	color: #DFDFE9;
+	background: #668D6E;
+	background: -webkit-linear-gradient(#668D6E, #334737);
+	background: -moz-linear-gradient(#668D6E, #334737);
+	background: -o-linear-gradient(#668D6E, #334737);
+	background: -ms-linear-gradient(#668D6E,#334737);
+	background: linear-gradient(#668D6E, #334737);
+}
+/*rows*/
+td{
+	background: #DFDFE9;
+}
+/*font color for table heads*/
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+padding: 0.5rem 0.625rem 0.625rem;
+font-size: 0.875rem;
+font-weight: bold;
+color: #DFDFE9;
+text-align: left;
+}
+/*font color for table rows*/
+table tr th, table tr td {
+padding: 0.5625rem 0.625rem;
+font-size: 0.875rem;
+color: #2A1928;
+}
+/*************** last section ************************/
+/*Video Section Itallic Title Section*/
+i{
+	color: #668D6E;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		/*remove sidemenu*/
+		aside{display: none;}
+		
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		/*remove sidemenu*/
+		aside{display: none;}
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		/*remove sidemenu*/
+		aside{display: none;}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		/*remove sidemenu*/
+		aside{display: none;}
+	}
