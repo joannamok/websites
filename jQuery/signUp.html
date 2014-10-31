@@ -1,0 +1,83 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>SignUp</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--google fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/signUp.css?v=1">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+	<div id='wrapper'>
+	<!--headers section-->
+<header>
+	<h1><img src="images/logo.png"></h1>
+	<h2>Your One-Stop Hangout for All Things Metal Clay</h2>
+</header>
+<!--sign up form-->
+<form>
+	<h1>Simply SignUp Below to Join Our Clay&amp;Play Community!</h1>
+	<!--form-->
+	<ol>
+		<!--username-->
+		<li><label for='user-name'>Username:<br> 
+			<input id='userName' type="text" placeholder="Your Username" class='masterTooltip' title='Choose a Username' required/> </label></li>
+		<!--email-->
+		<li><label for='email'>Email:<br> 
+			<input id='email' type="email" placeholder="Your Email" class='masterTooltip' title='Choose your email to use with this account'required/> </label></li>
+		<!--confirm email-->
+		<li><label for='confirm-email'>Confirm Email:<br> 
+			<input name='confirm' type="email" placeholder="Verify Your Email" class='masterTooltip' title='Verify your email from above'required/> </label></li>
+		<!--Password-->
+		<li><label for='password'>Password:<br> 
+			<input id='password' type="password" placeholder="Choose a Password" class='masterTooltip' title='Choose a unique Password'required/> </label></li>
+		<!--Confirm Password-->
+		<li><label for='pass-confirm'>Confirm Password:<br> 
+			<input type="password" placeholder="Verify your Password" class='masterTooltip' title='Confirm your New Password'required/> </label></li>
+		<!--sign up button-->
+		<li><button value='Submit' id='register' type="button" class='masterTooltip' title='Click to Start Your New Account'>Sign Up!</button></li>
+	</ol>
+</form>
+	
+	
+	
+	
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src='js/plugins/jquery.colorbox-min.js'></script>
+	<script type-'text/javascript' src="js/plugins/jquery-ui.min.js"></script>
+	<!-- plugins -->
+
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script> 
+  </div>
+</body>
+</html>

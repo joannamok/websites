@@ -1,0 +1,362 @@
+
+ /*logo*/
+ header{
+ 	width: 350px;
+ 	float: left;
+ 	padding-bottom: 30px;
+ }
+ /*sign out buttons*/
+#signOut{
+	width:300px;
+	float: right;
+	padding-bottom: 30px;
+}
+/*li tags for signOut buttons*/
+#logout li{
+	display: inline;
+}
+/*buttons for logout*/
+#logout button{
+	font-size: 16px;
+	width: 100px;
+}
+/*add project modal link section*/
+#addProject{
+	clear: both;
+	padding-bottom: 30px;
+}
+/*add project modal link*/
+#addProject a{
+	color:#f1654c;
+}
+/*project modal link hover*/
+#addProject a:hover{
+	color: #00ac65;
+	cursor: pointer;
+}
+#profile{
+	float: right;
+	margin: 30px -200px 0px 0px;
+}	
+/************ ADD modal ******************/
+/*overlay background*/
+#overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,172,101,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display:none;
+	padding-bottom: 100%;
+}
+/*form box*/
+form{
+	padding: 20px;
+}
+
+/*modal box*/
+#modal{
+	width: 350px;
+	background: #fafbfb;
+ 	background: -webkit-linear-gradient(#fafbfb, #fefefe);
+	background: -moz-linear-gradient(#fafbfb, #fefefe);
+	background: -o-linear-gradient(#fafbfb, #fefefe);
+	background: -ms-linear-gradient(#fafbfb, #fefefe);
+	background: linear-gradient(#fafbfb, #fefefe);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -200px;
+	z-index: 1001;
+	display:none;
+	
+}
+/* close box*/
+.close{
+	float: right;
+	padding: 10px 20px 10px 0;
+	font:1.2em 'Ubuntu Mono',sans-serif;
+	font-weight: bold;
+	color: #f1654c;
+}
+.close:hover{
+	color: #2ab69d;
+	font-size: 20px;
+	cursor: pointer;
+}
+/*modal title*/
+.header{
+	clear: both;
+	background: #00ac65;
+	background: -webkit-linear-gradient(#00ac65, #33bd84);
+	background: -moz-linear-gradient(#00ac65, #33bd84);
+	background: -o-linear-gradient(#00ac65, #33bd84);
+	background: -ms-linear-gradient(#00ac65, #33bd84);
+	background: linear-gradient(#00ac65, #33bd84);
+	color: #fafbfb;
+	padding:10px;
+} 
+
+/*form label and inputs*/
+label, input{
+	margin: 20px 0 15px 0;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	width: 300px;
+}
+
+/*radio buttons*/
+.myStatus input[type=radio]{
+	display: none;
+}
+/*radio checked image*/
+input[type=radio]:checked +img{
+	border: 2px solid #00ac65;
+	-webkit-border-radius:30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-o-border-radius: 30px 30px 30px 30px;
+	border-radius:30px 30px 30px 30px;
+}
+/*form submit button*/
+form button{
+	margin-top: 30px;
+}
+/*********************User Gallery**********************/
+/*gallery container*/
+#gallery{
+	border-top:4px solid #00ac65;
+}
+/*gallery title*/
+#userGal{
+	margin: 30px 0px 10px 10px;
+	font-size: 40px;
+	color: #00ac65;
+}
+/*bio container */
+ #bio{
+ 	background:#00ac65;
+ 	background: -webkit-linear-gradient(#33bd84, #00ac65);
+	background: -moz-linear-gradient(#33bd84, #00ac65);
+	background: -o-linear-gradient(#33bd84, #00ac65);
+	background: -ms-linear-gradient(#33bd84, #00ac65);
+	background: linear-gradient(#33bd84, #00ac65);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	color: #fafbfb;
+	padding-top: 10px;
+	border: 1px solid #00ac65;
+ }
+ #bio p{
+ 	padding: 20px;
+ }
+ /*edit bio button*/
+#editBio{
+	width: 150px;
+	height: 30px;
+	font-size: 16px;
+}
+/*edit bio button*/
+#editBio:hover{
+	background:#00b5b5;
+ 	background: -webkit-linear-gradient(#66d3d3, #00b5b5);
+	background: -moz-linear-gradient(#66d3d3, #00b5b5);
+	background: -o-linear-gradient(#66d3d3, #00b5b5);
+	background: -ms-linear-gradient(#66d3d3, #00b5b5);
+	background: linear-gradient(#66d3d3, #00b5b5); 
+}
+
+/*bio title*/
+#bioTitle{
+	background: #fafbfb;
+ 	background: -webkit-linear-gradient(#fafbfb, #fefefe);
+	background: -moz-linear-gradient(#fafbfb, #fefefe);
+	background: -o-linear-gradient(#fafbfb, #fefefe);
+	background: -ms-linear-gradient(#fafbfb, #fefefe);
+	background: linear-gradient(#fafbfb, #fefefe);
+	padding-left: 45%;
+}
+
+/************ BIO modal ******************/
+/*overlay background for bio*/
+#overlayBio{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,172,101,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display:none;
+	padding-bottom: 100%;
+}
+
+/*modal box for bio*/
+#modalBio{
+	width: 350px;
+	background: #fafbfb;
+ 	background: -webkit-linear-gradient(#fafbfb, #fefefe);
+	background: -moz-linear-gradient(#fafbfb, #fefefe);
+	background: -o-linear-gradient(#fafbfb, #fefefe);
+	background: -ms-linear-gradient(#fafbfb, #fefefe);
+	background: linear-gradient(#fafbfb, #fefefe);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -200px;
+	z-index: 1001;
+	display:none;
+	
+}
+/*text input for bio modal*/
+textarea{
+	width: 250px;
+	height: 330px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	padding: 15px;
+}
+/*******************************************USER Projects*************************************/
+
+/*project edit and delete buttons*/
+.deletebtn,.editbtn{
+	width: 60px;
+	height: 30px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+/*div that holds all projects*/
+#projectlist{
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+/*div that holds user projects*/
+.projects div{
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	padding:20px; 
+	margin:0px 10px 10px 0px; 
+	background: #def5eb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** Edit Modal ***************************************/
+
+/*overlay background*/
+#editAcct{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,172,101,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display:none;
+	padding-bottom: 100%;
+}
+
+/*modal box*/
+#editModal{
+	width: 350px;
+	background: #fafbfb;
+ 	background: -webkit-linear-gradient(#fafbfb, #fefefe);
+	background: -moz-linear-gradient(#fafbfb, #fefefe);
+	background: -o-linear-gradient(#fafbfb, #fefefe);
+	background: -ms-linear-gradient(#fafbfb, #fefefe);
+	background: linear-gradient(#fafbfb, #fefefe);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -200px;
+	z-index: 1001;
+	display:none;
+	
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		/*side nav*/
+		aside{
+			display: none;
+		}	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#profile{
+			float:none;
+			margin: 30px 0px 10px 0px;
+		}	
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#profile{
+			float:none;
+			margin: 30px 0px 10px 0px;
+		}		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+			/*side nav*/
+		#profile{
+			float:none;
+			margin: 30px 0px 10px 0px;
+		}	
+	}
+
+
+
+
+
+
+
+
+

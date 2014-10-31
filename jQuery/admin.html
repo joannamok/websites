@@ -1,0 +1,259 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>My Admin</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--google fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/admin.css?v=1">
+	<link href="css/jqUI/jquery-ui.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/colorbox.css?v=1">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+	<div id='wrapper'>
+	<!--headers section-->
+<header>
+	<h1><img src="images/logo.png"></h1>
+	<h2>Your One-Stop Hangout for All Things Metal Clay</h2>
+</header>
+<!-- Logout Button -->
+<section>
+	<button id='logoutbtn' type="button" name='logOut'>SignOut</button>
+</section>
+<!--welcome user-->
+<section id='userWelcome'>
+	<h3 class='userid'>Welcome User</h3>
+	<h5>What would you like to do today?</h5>
+<section id="profile">
+	<img src="images/profileImage.png">
+</section>
+
+<!--add space-->
+<aside id='addSpace'>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/supplies.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/beads.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/supplies.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/beads.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/supplies.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/beads.jpg" width='200px' height='200px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+	<div class='addSections'>
+	<h1>ADD SPACE</h1>
+	<img src="images/supplies.jpg" width='150px' height='150px'>
+	<p>This will be add space for jewelry supply companies</p>
+	</div>
+</aside>
+
+<!--area for tabs menu-->
+<div id='menu'>
+	<!--tabs nav-->
+	<ul id='tabs-nav'>
+		<li><a href="#projects">
+			<div class='tabular' id='projectBox'>
+			<img src="images/profileIcon.png" width='100' height='100' id='profileM' class='masterTooltip' title='Edit Profile'>
+			</div>
+			</a>
+		</li>
+		<li><a href="#favorites">
+			<div class='tabular' id='favoriteBox'>
+			<img src="images/favoriteIcon.png" width='100' height='100' id='favoritesM' class='masterTooltip' title='My Favorites'>
+			</div>
+			</a>
+		</li>
+		<li><a href="#search">
+			<div class='tabular' id='searchBox'>
+			<img src="images/searchIcon.png" width='100' height='100' id='searchM' class='masterTooltip' title='Search Clay&amp;Play Community'>
+			</div>
+			</a>
+		</li>
+	</ul>
+	<!--Tabs-->
+	<div id='tabs'>
+		<!--Profile content-->
+		<p id='projects'>
+			This is your Clay&amp;Play profile edit page. Visit this page to edit your collection of previously uploaded creations and update your bio. The content of your Profile Page is visible to all community members as well as anyone else browsing our community.
+ 
+			<a href="projects.html"><button id='profilebtn'class='projectsbtn'>Update Profile</button></a>
+		</p>
+		<!--Favorite content-->
+		<p id='favorites'>
+			This is your favorites collection. This is where all of favorite community designs stay. Visit this page to find all of your all time favorite Clay&amp;Play finds.<br>
+ 
+			<button id='favoritebtn' class='projectsbtn'>Favorites</button>
+		</p>
+		<!--Favorite content-->
+		<p id='search'>
+			This is where you will begin your search for awesome Metal Clay designs, created by community members. If you have contributed to our community designs this is where other members will find your designs too. Start your explorations today!
+ 
+			<button id='searchbtn' class='projectsbtn'>Search</button>
+		</p>
+	</div>
+</div>
+
+
+	<!--most favorites slideshow gallery(larger image modal on click)-->
+		<section id='mostFav'>
+			<!--section title-->
+			<h1>Our Favorite Clays of the Week</h1>
+			<!--div container for each item's image and user link-->
+			<div class='galBox'>
+			<!--image wrapped in a link-->
+			<a class='gallery' href='images/clay6.jpg'><img src="images/clay6.jpg" width='300px' height='300px'><br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+			</a>
+			</div>
+			<div class='galBox'>
+        	<a class='gallery' href='images/clay5.jpg'><img src="images/clay5.jpg" width='300px' height='300px'>
+        	<br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+        	</a>
+        	</div>
+        	<div class='galBox'>
+        	<a class='gallery' href='images/clay4.jpg'><img src="images/clay4.jpg" width='300px' height='300px'>
+        	<br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+        	</a>
+        	</div>
+        	<div class='galBox'>
+        	<a class='gallery' href='images/clay3.jpg'><img src="images/clay3.jpg" width='300px' height='300px'>
+        	<br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+        	</a>
+       		</div>
+        	<div class='galBox'>
+        	<a class='gallery' href='images/clay2.jpg'><img src="images/clay2.jpg" width='300px' height='300px'>
+        	<br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+        	</a>
+        	</div>
+        	<div class='galBox'>
+        	<a class='gallery' href='images/clay1.jpg'><img src="images/clay1.jpg" width='300px' height='300px'>
+        	<br>
+			<p><a href="#">Link to Username's Profile Page</a></p>
+        	</a>
+        	</div>
+		</section>
+
+		<!--tab menu with featured Artists-->
+		<section id='featureArtist'>
+			<!--title-->
+			<h1 id='artistBios'>Featured Clay&amp;Play Artists</h1>
+			<!--div holding accordion-->
+			<div class="accCon">
+				<!--begin accordion-->
+		<div id="accordion">
+			<!--section title-->
+			<h1>Shelly Cosby</h1>
+			<!--page container-->
+			<div>
+				<!--content-->
+				<p class='introP'>
+				This is where a description goes that will describe a highlighted metal clay designer. This will describe his/her craft, complete with an image and appropriate ship link as well as a link to this users Clay&amp;Play profile.
+				</p>
+				<!--featured links-->
+				<div class='accLinks'>
+					<a href="#" class='links'>Artist’s Shop</a><br>
+					<a href="#" class='links'>Social Page</a><br>
+					<a href="#" class='links'>Clay&amp;Play Profile</a><br>
+					<!--feature image-->
+					<img class='accImg' src="images/clay1.jpg" height='200' width='200'>
+				</div>
+			</div>
+			<!--section title-->
+			<h1>Ben Hopper</h1>
+			<div>
+				<p class='introP'>
+				This is where a description goes that will describe a highlighted metal clay designer. This will describe his/her craft, complete with an image and appropriate ship link as well as a link to this users Clay&amp;Play profile.
+				</p>
+				<div class='accLinks'>
+					<a href="#" class='links'>Artist’s Shop</a><br>
+					<a href="#" class='links'>Social Page</a><br>
+					<a href="#" class='links'>Clay&amp;Play Profile</a><br>
+					<img class='accImg' src="images/clay2.jpg" height='200' width='200'>
+				</div>
+			</div>
+			<!--section title-->
+			<h1>Silver Treasures</h1>
+			<div>
+				<p class='introP'>
+				This is where a description goes that will describe a highlighted metal clay designer. This will describe his/her craft, complete with an image and appropriate ship link as well as a link to this users Clay&amp;Play profile.
+				</p>
+				<div class='accLinks'>
+					<a href="#" class='links'>Artist’s Shop</a><br>
+					<a href="#" class='links'>Social Page</a><br>
+					<a href="#" class='links'>Clay&amp;Play Profile</a><br>
+					<img class='accImg' src="images/clay3.jpg" height='200' width='200'>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+</div>
+
+	
+	
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src='js/plugins/jquery.colorbox-min.js'></script>
+	<script type-'text/javascript' src="js/plugins/jquery-ui.min.js"></script>
+
+
+	<!-- plugins -->
+
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script> 
+  
+</body>
+</html>

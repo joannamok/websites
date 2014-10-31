@@ -1,0 +1,101 @@
+/*page body*/
+body{
+	font-family: calibri, sans-serif;
+	color:#000;
+	background: #fafbfb;
+ 	background: -webkit-linear-gradient(#fafbfb, #fefefe);
+	background: -moz-linear-gradient(#fafbfb, #fefefe);
+	background: -o-linear-gradient(#fafbfb, #fefefe);
+	background: -ms-linear-gradient(#fafbfb, #fefefe);
+	background: linear-gradient(#fafbfb, #fefefe);
+	max-width: 960px;
+	margin: 4% auto;
+} 
+
+/*page wrapper div*/
+#wrapper{
+	padding: 0 4% 0 4%;
+	overflow: hidden;
+
+}
+
+/*main headers*/
+h1,h2{
+	color: #00b5b5;
+	font-family: 'Ubuntu Mono',sans-serif ;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+/*sub headers*/
+h3,h4,h5{
+	color: #00ac65;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+/*a links*/
+a{
+	text-decoration: none;
+	color:#00b5b5;
+}
+
+/*ordered lists*/
+ol{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+/*buttons*/
+button{
+	background:#f7ce38;
+ 	background: -webkit-linear-gradient(#f9d860, #f7ce38);
+	background: -moz-linear-gradient(#f9d860, #f7ce38);
+	background: -o-linear-gradient(#f9d860, #f7ce38);
+	background: -ms-linear-gradient(#f9d860, #f7ce38);
+	background: linear-gradient(#f9d860, #f7ce38);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	width: 180px;
+	height: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+/*button on hover*/
+button:hover{
+	background:#00ac65;
+ 	background: -webkit-linear-gradient(#33bd84, #00ac65);
+	background: -moz-linear-gradient(#33bd84, #00ac65);
+	background: -o-linear-gradient(#33bd84, #00ac65);
+	background: -ms-linear-gradient(#33bd84, #00ac65);
+	background: linear-gradient(#33bd84, #00ac65);
+	cursor: pointer;
+}
+/*inputs*/
+input{
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	width: 400px;
+	height: 40px;
+	background: #fcfbff;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+/*Tooltips*/
+.tooltip{
+	display: none;
+	position: absolute;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	padding: 7px;
+	color: #fafbfb;
+	background: #00ac65;
+	font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,217 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>My Profile Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/projects.css?v=1">
+	<link href="css/jqUI/jquery-ui.min.css" rel="stylesheet">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+<div id='wrapper'>	
+	<!--header section-->
+<header>
+	<h1><img src="images/logo.png" alt="Clay and Play"></h1>
+	<h2 id='intro'>Your One-Stop Hangout for<br> All Things Metal Clay</h2>
+</header>
+<!--logout menu-->
+<section id="signOut">
+	<ol id='logout'>
+		<li><a href="admin.html"><button id ='returnProfile'>My Admin</button></a>
+		</li>
+		<li><button>SignOut</button>
+		</li>
+	</ol>
+</section>
+<!--dynamically welwcomes user-->
+<section>
+	<h3 class='userid'>Welcome User</h3>
+</section>
+<!--profile image-->
+<section id="profile">
+	<img src="images/profileImage.png">
+</section>
+<section id="addProject">
+		<h2><a href="#" class="modalClick">Add+</a></h2>
+</section>
+
+<section id="overlay">
+
+	<!--modal-->
+	<div id="modal">
+
+		<span class="close">X</span>
+		<h3 class="header">Add to my Gallery</h3>
+		<!--form div-->
+		<div id="add">
+			<!--form-->
+			<form id="addForm">
+				<label>Design Name:</label>
+				<input name="projectName" type="text" id="projectName"/>
+				<br>
+				<label>Description:</label>
+				<input name="projectDescription" type="text" id="projectDescription"/>
+				<br>
+				<label>Date:</label>
+				<input name="projectDueDate" type="text" id="projectDueDate" class='myDatePicker'/>
+				<br>
+				<label for="status">Select Design:</label>
+				<br>
+
+				<label class="myStatus">
+					<input type="radio" name="status" id="pendant">
+					<img src="images/pendant.png" width="70" height="70">
+				</label>
+
+				<label class="myStatus">
+					<input type="radio" name="status" id="rings">
+					<img src="images/ring.png" width="70" height="70">
+				</label>
+
+				<label class="myStatus">
+					<input type="radio" name="status" id="bracelets">
+					<img src="images/bracelet.png" width="70" height="70">
+				</label>
+				
+				<label class="myStatus">
+					<input type="radio" name="status" id="other">
+					<img src="images/other.png" width="70" height="70">
+				</label>
+				<!--button-->
+				<button id='addButton'>Add</button>
+			</form><!--end form-->
+		</div><!--end form div-->
+	</div><!--end modal-->
+</section>
+
+
+
+
+<!--EDIT SECTION-->
+<div id="editAcct">
+	<div id='editModal'>
+		<span class="close">X</span>
+		<h3 class="header">Edit my Design</h3>
+	<form id="addForm">
+		<label>Design Name:</label>
+				<input name="projectName" type="text" id="updateDesign"/>
+				<br>
+				<label>Description:</label>
+				<input name="projectDescription" type="text" id="updateDesc"/>
+				<br>
+				<label>Date:</label>
+				<input name="projectDueDate" type="text" id="updateDate" class='myDatePicker'/>
+				<br>
+				<label for="status">Select Design:</label>
+				<br>
+
+				<label class="myStatus">
+					<input type="radio" name="statusU" id="pendant">
+					<img src="images/pendant.png" width="70" height="70">
+				</label>
+
+				<label class="myStatus">
+					<input type="radio" name="statusU" id="rings">
+					<img src="images/ring.png" width="70" height="70">
+				</label>
+
+				<label class="myStatus">
+					<input type="radio" name="statusU" id="bracelets">
+					<img src="images/bracelet.png" width="70" height="70">
+				</label>
+				
+				<label class="myStatus">
+					<input type="radio" name="statusU" id="other">
+					<img src="images/other.png" width="70" height="70">
+				</label>
+				<!--button-->
+				<button id='editButton'>Add</button>
+			</form><!--end form-->
+	</div><!--closes modal box-->		
+</div><!--Closes editAcct-->
+
+
+
+
+<section id='gallery'>
+<!--Profile Gallery-->
+<h2 id='userGal'>My Clay&amp;Play Gallery</h2>
+<!--User Bio-->
+<div id='bio'>
+	<h3 id='bioTitle'>Bio</h3>
+	<p>This is where your bio goes. Use this area to explain your craft and give other community members a brief description of your designs. Be sure to list any websites, blogs, addresses and or phone numbers that are associated with your jewelry creations so members know where else they can find your metal clay designs. <button id='editBio'>Edit Bio</button></p>
+</div>
+<!--BIO MODAL-->
+<!--overlay for bio-->
+<section id='overlayBio'>
+<!--modal-->
+	<div id="modalBio">
+		<span class="close">X</span>
+		<h3 class="header">Update My Bio</h3>
+		<!--form div-->
+		<div id="addBio">
+			<!--form-->
+			<form id="bioForm">
+				<label>Bio:</label><br>
+				<textarea id='bioStory'rows="4" cols="20" name="comments">Tell us about yourself and your craft...</textarea>
+				<!--button-->
+				<button id='bioButton'>Update</button>
+			</form><!--end form-->
+		</div><!--end form div-->
+	</div><!--end modal-->
+</section>	
+
+<!--for user projcts-->
+<div id="projectlist">
+	<!--this will hold indv. projects-->
+	<div class="projects" id='sortable'></div>
+</div>
+</section>
+
+
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src='js/plugins/jquery.colorbox-min.js'></script>
+	<script type-'text/javascript' src="js/plugins/jquery-ui.min.js"></script>
+	<!-- plugins -->
+
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

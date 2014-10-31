@@ -1,0 +1,66 @@
+/*body*/
+body{
+	background: url(../images/ctaImage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*header section*/
+header{
+	width: 400px;
+	float: left;
+}
+/*header catch phrase*/
+#intro{
+	color: #fafbfb;
+}
+/******shadows for buttons and inputs************/
+input,button{
+	-webkit-box-shadow: 6px 6px 5px #808080;
+	-moz-box-shadow: 6px 6px 5px #808080;
+	-o-box-shadow: 6px 6px 5px #808080;
+	-ms-box-shadow: 6px 6px 5px #808080;
+	box-shadow: 6px 6px 5px #808080;
+}
+/*************sign in section***************/
+/*sign in section*/
+#signIn{
+	margin-top:50px;
+	float: right;
+}
+/*labels*/
+label{
+	color: #000;
+	font-size: 20px;
+}
+
+/**********cta section*************/
+/*cta section*/
+#cta{
+	clear:both;
+	padding-top: 100px;
+}
+/*cta h2 phrase*/
+#cta h2{
+	color: #f1654c;
+	font-size: 40px;
+	font-weight: bold;
+}
+/*cta h3 phrase*/
+#cta h3{
+	color: #00ac65;
+	font-size: 30px;
+}
+/*cta button*/
+#ctaButton{
+	width: 100%;
+	height: 60px;
+	margin-bottom: 50px;
+	background:#00b5b5;
+ 	background: -webkit-linear-gradient(#00b5b5, #66d3d3);
+	background: -moz-linear-gradient(#00b5b5, #66d3d3);
+	background: -o-linear-gradient(#00b5b5, #66d3d3);
+	background: -ms-linear-gradient(#00b5b5, #66d3d3);
+	background: linear-gradient(#00b5b5, #66d3d3);
+}

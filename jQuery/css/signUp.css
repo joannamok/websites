@@ -1,0 +1,40 @@
+header h2{
+	margin-left: 10%;
+}
+/*form page*/
+form{
+	background: blue;
+	width: 500px;
+	padding: 30px 200px 30px 200px;
+	-webkit-border-radius: 320px;
+	-moz-border-radius: 320px;
+	-o-border-radius: 320px;
+	border-radius: 320px;
+	background: #00b5b5;
+ 	background: -webkit-linear-gradient(#66d3d3, #00b5b5);
+	background: -moz-linear-gradient(#66d3d3, #00b5b5);
+	background: -o-linear-gradient(#66d3d3, #00b5b5);
+	background: -ms-linear-gradient(#66d3d3, #00b5b5);
+	background: linear-gradient(#66d3d3, #00b5b5);
+	color: #fafbfb;
+	font-size: 18px;
+	webkit-box-shadow: 6px 6px 5px #808080;
+	-moz-box-shadow: 6px 6px 5px #808080;
+	-o-box-shadow: 6px 6px 5px #808080;
+	-ms-box-shadow: 6px 6px 5px #808080;
+	box-shadow: 6px 6px 5px #808080;
+	margin-bottom: 40px;
+}
+/*form title*/
+form h1{
+	color: #fafbfb;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+input,button{
+	-webkit-box-shadow: 6px 6px 5px #666666;
+	-moz-box-shadow: 6px 6px 5px #666666;
+	-o-box-shadow: 6px 6px 5px #666666;
+	-ms-box-shadow: 6px 6px 5px #666666;
+}
