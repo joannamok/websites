@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joanna Lacey's Portfolio</title>
+    <!--font-->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <!--logo-->
+      <h1><img src="images/logo.png" alt="Joanna Lacey"></h1>
+      <!--nav-->
+      <nav>
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation"><a href="index.html">Home</a></li>
+          <li role="presentation"><a href="gallery.html">Graphics</a></li>
+          <li role="presentation"><a href="smm.html">Social Media</a></li>
+          <li role="presentation" class="active"><a href="websites.html">Web Design</a></li>
+          <li role="presentation"><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </header>
+    <h2>Designing for the Web: Responsive Design from a Mobile First Perspective </h2>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#bs" role="tab" data-toggle="tab">Bootstrap</a></li>
+      <li role="presentation"><a href="#angular" role="tab" data-toggle="tab">JS Frameworks</a></li>
+      <li role="presentation"><a href="#found" role="tab" data-toggle="tab">Foundation</a></li>
+      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">jQuery/jQueryUI</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+    <!-- jewelry nerd -->
+      <div role="tabpanel" class="tab-pane active row" id="bs">
+        <div class="col-sm-6">
+          <h2>Jewelry Nerd</h2>
+          <p>Jewelry Nerd is a fictional website I made for a school project. I created the concept and designed the website based on it’s fictional user-base. I used the responsive framework, Bootstrap along with jQuery to create it. I pushed away from the out- of –the-box look by using my own custom css style sheet to add extra polish to the it.</p>
+          <h4>Click the buttons below to checkout each page in this UX</h4>
+          <!--Jewelry Nerd Links-->
+          <div class="btn-group-vertical">
+            <a target="_blank" href="http://joannamok.github.io/websites/JewelryNerd/index.html"class="btn btn-primary btn-lg">Home</a>
+            <a target="_blank" href="http://joannamok.github.io/websites/JewelryNerd/beads.html" class="btn btn-primary btn-lg">Search Page</a>
+            <a target="_blank" href="http://joannamok.github.io/websites/JewelryNerd/details.html"class="btn btn-primary btn-lg">Details Page</a>
+            <a target="_blank" href="http://joannamok.github.io/websites/JewelryNerd/fav.html"class="btn btn-primary btn-lg">Favorites Page</a>
+            <a target="_blank" href="http://joannamok.github.io/websites/JewelryNerd/reviews.html"class="btn btn-primary btn-lg">Review Page</a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive" src="images/jewelryNerd.png" alt="jewelry from Wire Geeks">
+        </div>
+      </div>
+      <!--YardSeller-->
+      <div role="tabpanel" class="tab-pane" id="angular">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2>YardSeller</h2>
+          <p>This is a basic SPA that I created in school. It uses Angular.js to pull and add info to a Javascript Object. It is all on one page via Angular Routes. This one uses local storage. I plan to learn more about this technology and connecting these frameworks to servers as I further my degree. </p> 
+          <!--YardSeller link-->
+          <a target="_blank" href="http://joannamok.github.io/Portfolio/Angular/index.html" class="btn btn-primary btn-lg">YardSeller</a>
+        </div> 
+        <div class="col-sm-7">
+          <img class="img-responsive" src="images/yardSeller.png" alt="jewelry from Wire Geeks">
+        </div> 
+       </div>
+       <div class="row">
+        <div class="col-sm-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/FEsxVOMS6iQ?rel=0"></iframe>
+          </div>
+        </div>
+          <div class="col-sm-7">
+            <h4>Another Great JS Framework</h4>
+             <p>Ember.js is also a great Javascript framework I am learning about. It is similar to Angular and great for making SPAs as well as larger more complex apps. </p>
+             <h5>Follow the button below for a demo of this basic SPA in the video</h5>
+             <!--Ember link-->
+              <a target="_blank" href="http:http://joannamok.github.io/websites/ember/index.html" class="btn btn-primary btn-lg">Ember SPA</a>
+        </div>
+       </div>
+      </div>
+      <div role="tabpanel" class="row tab-pane" id="found">
+        <div class="col-sm-5">
+          <h2>Prim Pooch</h2>
+          <p>Prim Pooch is a fictional website I created during my sophomore year of school. It utilizes the responsive framework, Foundation. More than, design and using Foundation, this project was about using makes use of many of CSS3’s transitions and transforms. This project was about exploring CSS3 options more than designing a cohesive website</p>
+          <a target="_blank" href="http://joannamok.github.io/websites/dogCare/index.html" class="btn btn-primary btn-lg">Prim Pooch</a>
+        </div>
+        <div class="col-sm-7">
+          <img class="img-responsive" src="images/prim.png" alt="jewelry from Wire Geeks">
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="settings">
+        <article class="row">
+      <h2>jQuery UX</h2>
+      <section class="col-sm-7">
+        <!--video for jQuery project-->
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/S8G61Ypeszg?rel=0"></iframe>
+      </div>
+      </section>
+      <!--desc for jQuery project-->
+      <section class="col-sm-5">
+        <p>This jQuery/JSON website is a project I did for school. If it were hosted on a server, users would have the ability to create an account, add and edit projects and login/logout. Here on my portfolio website, the backend is not connected to a server so it will not function properly with user inputs. Watch my YouTube for a demonstration of it connected to my Mamp. Click the links below to visit each individual page in the UX:</p>
+        <!--box of links for jQUery Project-->
+        <div class="btn-group-vertical">
+          <a target="_blank" href="http://joannamok.github.io/websites/jQuery/index.html"class="btn btn-primary btn-lg">CTA Page</a>
+          <a target="_blank" href="http://joannamok.github.io/websites/jQuery/signUp.html" class="btn btn-primary btn-lg">SignUp Page</a>
+          <a target="_blank" href="http://joannamok.github.io/websites/jQuery/admin.html"class="btn btn-primary btn-lg">Admin Page</a>
+          <a target="_blank" href="http://joannamok.github.io/websites/jQuery/projects.html"class="btn btn-primary btn-lg">Edit Projects</a>
+      </div>
+      </section>
+    </article>
+      </div>
+    </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

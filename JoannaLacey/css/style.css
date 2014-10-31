@@ -1,0 +1,98 @@
+/*headers*/
+h1,h2,h3,h4,h5{
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 30px;
+	color: #00739F;
+}
+/*page conatainer*/
+.container{
+	margin-bottom:30px;
+}
+/*primary buttons in page*/
+.btn-primary{
+	background: #FD7400;
+	border: none; 
+}
+/*primary buttonson hover*/
+.btn-primary:hover{
+	background: #96CA2D;
+	border: none; 
+}
+/*verticle button groups*/
+.btn-group-vertical{
+	width: 100%;
+}
+/*************INDEX.HTML***************************/
+/*top sections*/
+.sec{
+	height: 400px;
+	padding: 10px;
+}
+/*img in top sections*/
+.sec img{
+	margin-top: 20px;
+}
+/*paragraphs in top sections*/
+.sec p{
+	margin-top:30px;
+}
+/*button in section*/
+.sec a{
+	margin-top: 30px;
+	width: 100%;
+}
+/*main article*/
+#mainSec{
+	margin-top:70px;
+}
+/*button group*/
+#btnGrp{
+	margin-top: 60px;
+}
+/*wire geeks section*/
+#wgSec{
+	margin-top: 70px;
+}
+/*thumbnail section in WireGeeks section*/
+#wgTN{
+	height: 270px;
+	padding: 15px;
+}
+/*button in wgTN*/
+#wgTN a{
+	margin-top: 50px;
+	width: 100%;
+}
+/*Nerd Section*/
+#nerdSec{
+	margin-top: 70px;
+}
+/*image in nerd section*/
+#nerdSec img{
+	margin-top:70px;
+}
+
+/************************************GALLERY.HTML************************************/
+/*thumbnail galleries*/
+.gal .thumbnail{
+	height: 1050px;
+	padding: 10px;
+}
+/*headers*/
+.gal h4{
+	color: #FD7400;
+}
+/*thumbnail images*/
+.gal img{
+	margin-bottom: 40px;
+}
+/*logos*/
+#logos img{
+	margin-bottom: 100px;
+}
+/*desktop title*/
+#dt{
+	color: #FD7400;
+}
+
+
