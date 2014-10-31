@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <!--google font ** font-family: 'Ubuntu', sans-serif;-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!-- normailize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jqUI/jquery-ui.min.css">
+     <!-- Main CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="row mainNav">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button id="navButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                      <!--for screen readers-->
+                      <span class="sr-only">Toggle navigation</span>
+                      <!---->
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>                                              
+                        <li class="dropdown"><a href="#" data-toggle="dropdown">Supplies <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="beads.html">Beads</a></li>
+                                <li><a href="#">Cabochons/Gems</a></li>
+                                <li><a href="#">Metals</a></li>
+                                <li><a href="#">Findings</a></li>
+                                <li><a href="#">Tools</a></li>
+                                <li><a href="tips.html">Tutorials</a></li>
+                            </ul>                    
+                        </li>
+                        <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+                        <li><a href="#">the Nerd Blog</a></li>
+                        <li><a href="#">About Us</a></li>  
+                    </ul> 
+                </div>
+             </nav> 
+        </div> <!--end nav row-->
+    </header>
+    <!--search bar section-->
+    <section id="search" class="row">
+        <!--logo-->
+        <a href="index.html"><div class="col-md-2"><img src="images/logo.png" alt="the Jewelry Nerd"></div></a>
+        <!--search input-->
+        <div class="col-md-8">
+            <div class="input-group input-group-lg">
+                <div class="input-group-btn">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search For <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Beads</a></li>
+                        <li><a href="#">Cabochons/Gems</a></li>
+                        <li><a href="#">Metals</a></li>
+                        <li><a href="#">Findings</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control">
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg">Go!</button>
+        </div>    
+    </section>
+     <!--section with company jingle and also login/logout-->
+    <section class="row">
+        <div class="col-sm-4">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Supplies</a></li>
+                <li><a href="Beads.html">Beads</a></li>
+                <li><a href="details.html">Onyx Beads</a></li>
+                <li class="active"><a href="#">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h4>Your <span id="logoTag">One-Stop Search</span> for Stones,Beads,Metals,Findings &amp; Tutorials</h4>
+        </div>
+        <div class="col-sm-2">
+        <!--login/logout-->
+            <ul class="nav nav-pills login">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--page-->
+    <section class="row reviewPage">
+        <!--reviews section-->
+        <section id="nerdReview" class="col-md-9">
+            <!--page title-->
+            <h2>The Nerd Review</h2>
+            <!--page description-->
+            <p id="pageDesc">Reviews from the fellow Jewelry Nerd Community</p>
+            <!--overall rating-->
+            <p id="totRatingP">Over All Rating for <span id="reviewedName">ShopName</span>: 
+                <span id="totRating">
+                    <span class="rating glyphicon glyphicon-star" id="star1"></span> 
+                    <span class="rating glyphicon glyphicon-star" id="star2"></span> 
+                    <span class="rating glyphicon glyphicon-star" id="star3"></span> 
+                    <span class="rating glyphicon glyphicon-star" id="star4"></span> 
+                    <span class="rating glyphicon glyphicon-star" id="star5"></span>
+                </span>
+            </p>
+            <div id="addReview">
+                <p><a href="#" class="modalClick">Post a Review for this Seller</a></p>
+            </div>
+            <!--customer review post-->
+            <article class="row customerReview">
+                <h4>Reviewed by <span class="usernameR"> jewelz24 </span></h4>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Rating</th>
+                        <th>Item Purchased</th>
+                        <th>Comment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <!--rating-->
+                        <td>
+                            <span class="rating glyphicon glyphicon-star star1"></span> 
+                            <span class="rating glyphicon glyphicon-star star2"></span> 
+                            <span class="rating glyphicon glyphicon-star star3"></span> 
+                            <span class="rating glyphicon glyphicon-star star4"></span> 
+                            <span class="rating glyphicon glyphicon-star star5"></span>
+                        </td>
+                        <!--item purchase-->
+                        <td>turquoise beads</td>
+                        <!--item purchase-->
+                        <td>They were great, good bang for the buck!</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>    
+            </article>
+             <!--pagination-->
+            <div class="row">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+            
+        </section>
+        <!--adds section-->
+        <aside class="col-md-3">
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="images/add1.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="images/add2.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>   
+        </aside>
+    </section><!--review page-->
+    <!--overlay-->
+    <section id="overlay">
+        <!--modal-->
+        <div id="modal">
+
+            <span class="close">X</span>
+            <h3 class="modalHeader">Review</h3>
+            <!--form div-->
+            <div id="addR">
+                <!--form-->
+                <form id="reviewForm">
+                    <label>What did you Purchase?</label><br>
+                    <input name="purchaseName" type="text" id="purchaseName"/>
+                    <br>
+                    <label>Comments:</label><br>
+                    <textarea name="comments" type="text" id="comments">Tell a little about your experience...</textarea>
+                    <br>
+                    <label>Date:</label><br>
+                    <input name="purchaseDate" type="text" id="purchaseDate" class='myDatePicker'/>
+                    <br>
+                    <label for="rating">Rate Your Experience:</label>
+                    <br>
+
+                    <label class="myStatus">
+                        <input type="checkbox" name="status" id="1s">
+                        <p class="glyphicon glyphicon-star"></p>
+                    </label>
+
+                    <label class="myStatus">
+                        <input type="checkbox" name="status" id="2s">
+                        <p class="glyphicon glyphicon-star"></p>
+                    </label>
+
+                    <label class="myStatus">
+                        <input type="checkbox" name="status" id="3s">
+                        <p class="glyphicon glyphicon-star"></p>
+                    </label>
+                    
+                    <label class="myStatus">
+                        <input type="checkbox" name="status" id="4s">
+                        <p class="glyphicon glyphicon-star"></p>
+                    </label>
+                    <label class="myStatus">
+                        <input type="checkbox" name="status" id="5s">
+                        <p class="glyphicon glyphicon-star"></p>
+                    </label><br>
+                    <!--button-->
+                    <button class="btn btn-primary" id='addButton'>Add</button>
+                </form><!--end form-->
+            </div><!--end form div-->
+        </div><!--end modal-->
+    </section>
+    <!--footer nav-->
+    <footer class="row">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+    </footer>
+</div><!--end page container-->
+<!--*********** js *****************-->
+<!--jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type-'text/javascript' src="js/jquery-ui.min.js"></script>
+<!--Bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

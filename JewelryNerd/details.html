@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!--google font ** font-family: 'Ubuntu', sans-serif;-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!-- normailize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+     <!-- Main CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <!--font Awesome CDN-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button id="navButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                      <!--for screen readers-->
+                      <span class="sr-only">Toggle navigation</span>
+                      <!---->
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>                                              
+                        <li class="dropdown active"><a href="#" data-toggle="dropdown">Supplies <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="beads.html">Beads</a></li>
+                                <li><a href="#">Cabochons/Gems</a></li>
+                                <li><a href="#">Metals</a></li>
+                                <li><a href="#">Findings</a></li>
+                                <li><a href="#">Tools</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>                    
+                        </li>
+                        <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+                        <li><a href="#">the Nerd Blog</a></li>
+                        <li><a href="#">About Us</a></li>  
+                    </ul> 
+                </div>
+             </nav> 
+        </div> <!--end nav row-->
+    </header>
+    <!--search bar section-->
+    <section id="search" class="row">
+        <!--logo-->
+        <a href="index.html"><div class="col-md-2"><img src="images/logo.png" alt="the Jewelry Nerd"></div></a>
+        <!--search input-->
+        <div class="col-md-8">
+            <div class="input-group input-group-lg">
+                <div class="input-group-btn">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search For <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Beads</a></li>
+                        <li><a href="#">Cabochons/Gems</a></li>
+                        <li><a href="#">Metals</a></li>
+                        <li><a href="#">Findings</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="tips.html">Tutorials</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control">
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg">Go!</button>
+        </div>    
+    </section>
+    <!--section with company jingle and also login/logout-->
+    <section class="row">
+        <div class="col-sm-4">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Supplies</a></li>
+                <li><a href="Beads.html">Beads</a></li>
+                <li class="active"><a href="#">Onyx Beads</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h4>Your <span id="logoTag">One-Stop Search</span> for Stones,Beads,Metals,Findings &amp; Tutorials</h4>
+        </div>
+        <div class="col-sm-2">
+        <!--login/logout-->
+            <ul class="nav nav-pills login">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- page -->
+    <section class="row" id="itemPage">
+        <!--main article-->
+        <article class="col-md-9" id="listingInfo">
+           <div class="row">
+                <!--main image-->
+                <div class="col-md-5">
+                    <img id="feature" class="img-responsive img-thumbnail pull-right" src="images/beadListing.jpg">
+                     <!--social icons-->
+                    <div class="navbar-text social">
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-wordpress fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-tumblr-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <!--description-->
+                <div class="col-md-6">
+                    <!--item title-->
+                    <h2 class="listText">10mm Faceted Onyx Beads</h2>
+                    <!--item price-->
+                    <p class="listText" id="price">$8.99</p>
+                    <!--description-->
+                    <p class="listText">10mm Black faceted Onyx Beads. Beads come on 16in string. More that 200 strings available for purchase.</p>
+                    <!--Go to website button-->
+                    <button type="button" class="btn btn-default btn-lg btn-block listText">Follow to Website</button>
+                    <!--Shop Location-->
+                    <p class="listText">From <a id="shopName" href="#">ShopName</a> on <span id="cms">Etsy</span></p>
+                     <!--Reviews-->
+                     <p class="listText" id="reviewP"><a id="reviews" href="reviews.html">Nerd Reviews</a> on this item</p>
+                     <!--Add to Favs-->
+                     <button id="addToFavs" type="button" class="btn btn-default btn-lg listText"><span class="glyphicon glyphicon-heart"></span></button>
+                     <p id="addFavs">Add to Favorites</p>
+                </div>
+            </div>
+
+            <section class="row" id="sugBox">
+                <h4>Sugested Items</h4>
+                    <!--row1-->
+                <div class="row" id="sugItems">
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive img-thumbnail" src="images/sug1.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive img-thumbnail" src="images/sug2.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive img-thumbnail" src="images/sug3.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive img-thumbnail" src="images/sug4.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </section>      
+        </article> <!--end side page-->
+        <!--Add Sapce-->
+        <aside class="col-md-3" id="beadAside">
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="images/add1.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="images/add2.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+    </section><!-- end page row -->
+
+
+    <!--footer nav-->
+    <footer class="row">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+    </footer>
+</div><!--end page container-->
+<!--*********** js *****************-->
+<!--jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<!--Bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

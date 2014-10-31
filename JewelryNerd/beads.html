@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beads</title>
+    <!--google font ** font-family: 'Ubuntu', sans-serif;-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!-- normailize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+     <!-- Main CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button id="navButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                      <!--for screen readers-->
+                      <span class="sr-only">Toggle navigation</span>
+                      <!---->
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>                                              
+                        <li class="dropdown active"><a href="#" data-toggle="dropdown">Supplies <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Beads</a></li>
+                                <li><a href="#">Cabochons/Gems</a></li>
+                                <li><a href="#">Metals</a></li>
+                                <li><a href="#">Findings</a></li>
+                                <li><a href="#">Tools</a></li>
+                                <li><a href="tips.html">Tutorials</a></li>
+                            </ul>                    
+                        </li>
+                        <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+                        <li><a href="#">the Nerd Blog</a></li>
+                        <li><a href="#">About Us</a></li>  
+                    </ul> 
+                </div>
+             </nav> 
+        </div> <!--end nav row-->
+    </header>
+    <!--search bar section-->
+    <section id="search" class="row">
+        <!--logo-->
+        <a href="index.html"><div class="col-md-2"><img src="images/logo.png" alt="the Jewelry Nerd"></div></a>
+        <!--search input-->
+        <div class="col-md-8">
+            <div class="input-group input-group-lg">
+                <div class="input-group-btn">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search For <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Beads</a></li>
+                        <li><a href="#">Cabochons/Gems</a></li>
+                        <li><a href="#">Metals</a></li>
+                        <li><a href="#">Findings</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="tips.html">Tutorials</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control">
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg">Go!</button>
+        </div>    
+    </section>
+     <!--section with company jingle and also login/logout-->
+    <section class="row">
+        <div class="col-sm-3">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Supplies</a></li>
+                <li class="active"><a href="#">Beads</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7">
+            <h4>Your <span id="logoTag">One-Stop Search</span> for Stones,Beads,Metals,Findings &amp; Tutorials</h4>
+        </div>
+        <div class="col-sm-2">
+        <!--login/logout-->
+            <ul class="nav nav-pills login">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- page -->
+    <section class="row">
+        <!--main article-->
+        <article class="col-md-9" id="favGal">
+            <!--main article-->
+            <div class="row" id="beadArt">
+                <img id="beadImg" src="images/beadArticle.jpg" alt="floral beads" class="img-responsive img-circle" width="300px">
+                <h2>Where to Buy, Choose Your Beads Wisely</h2>
+                <p>We have all been through it: the agonizing search for the perfect bead. There are many factors consider when choosing the perfect bead for your project. From what type of material to use, what size is the bead holes, what colors to choose, is it real and everything in between. In this Beaded Nerd Blog Post we will explore the ins and outs of shopping beads. </p>
+                <p>We did some digging and even did some interviewing with some of the top designers in the Jewelry Nerd Community. We compiled the perfect Q and A to get you started on your search…   <span><button type="button" class="btn btn-primary btn-xs">Read More</button></span></p>
+            </div>
+            <div class="row listingGal" id="beadSearchTop">
+                <div class="col-xs-6">
+                    <h2>Beads</h2>
+                </div>
+                <!--dropdown button-->
+                <div class='col-xs-6 hidden-xs' id="listBtn">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-lg">Item Order</button>
+                        <button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Newest</a></li>
+                            <li><a href="#">Price Low to High</a></li>
+                            <li><a href="#">Price High to Low</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+
+
+
+            <section class="listingSection">
+            <!--row1-->
+            <div class="row galrow">
+            <!--col1-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/beadListing.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col2-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead2.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col3-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive " src="images/bead3.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col4-->
+                <div class="col-sm-3 col-xs-6">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead4.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--row2-->
+            <div class="row galrow">
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead5.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col2-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead6.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col3-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead7.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col4-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead8.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--row3-->
+            <div class="row galrow">
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead9.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col2-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead10.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col3-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead2.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col4-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead3.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--row4-->
+            <div class="row galrow">
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead5.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col2-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead6.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col3-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead7.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--col4-->
+                <div class="col-sm-3 col-xs-6 imageBox">
+                    <a href="details.html">
+                        <div class="listBox">
+                            <img class="img-responsive" src="images/bead8.jpg" alt="supply listing" >
+                            <!--content on hover-->
+                            <div class="content">
+                                <button class="hoverFav glyphicon glyphicon-heart"></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>    
+            <!--pagination-->
+            <div class="row">
+                <ul class="pagination" id="beadPag">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        
+        </article> <!--end side page-->
+        <!--Add Sapce-->
+        <aside class="col-md-3">
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="images/add1.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <img src="images/add2.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <img src="images/add3.jpg" alt="" class="img-responsive img-rounded">
+                    <h4 class="caption">Add Space</h4>
+                    <p class="caption">This is the ultimate hammer; it comes with several textured replacement heads. For best results, use with a stainless steel anvil, also available in shop. Every purchase comes complete with…<a class="readLink"href="#">Read More</a></p>
+                </div>
+            </div>
+         </aside>
+    </section><!-- end page row -->
+    <!--footer nav-->
+    <footer class="row">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="fav.html"><span class="glyphicon glyphicon-heart"></span></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+    </footer>
+</div><!--end page container-->
+<!--*********** js *****************-->
+<!--jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<!--Bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
