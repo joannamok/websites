@@ -1,7 +1,6 @@
 /*headers*/
 h1,h2,h3,h4,h5{
 	font-family: 'Lato', sans-serif;
-	margin-bottom: 30px;
 	color: #00739F;
 }
 /*page conatainer*/
@@ -95,4 +94,40 @@ h1,h2,h3,h4,h5{
 	color: #FD7400;
 }
 
-
+/****************************************SMM.HTML*************************************************/
+/*accordion tabs*/
+#accordion .panel-heading{
+	 background: #FD7400;
+	 height: 80px;
+}
+/*hover over tabs*/
+#accordion .panel-heading:hover{
+ 	background: #96CA2D;
+}
+/*a link in accordion header*/
+#accordion .panel-heading a{
+	color: white;
+	font-size: 1.5em;
+}
+/*accordion body*/
+#accordion .panel-body{
+	padding: 20px;
+}
+/*button in accoridion*/
+#accordion .panel-body a{
+	background: #96CA2D;
+}
+/*hover over accordion*/
+#accordion .panel-body a:hover{
+	background: #FD7400;
+}
+/*thumbnail in accordion 1*/
+.tn1{
+	padding: 20px;
+}
+/*thumbnail in accordion 1*/
+.tn1 a{
+	margin-top: 20px;
+	width:100%;
+}
+/*****************************************/
