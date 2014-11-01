@@ -125,9 +125,53 @@ h1,h2,h3,h4,h5{
 .tn1{
 	padding: 20px;
 }
-/*thumbnail in accordion 1*/
+/*thumbnail in accordion 1 button*/
 .tn1 a{
 	margin-top: 20px;
 	width:100%;
 }
-/*****************************************/
+/*thumbnail in accordion 2*/
+.tn2{
+	padding: 20px;
+}
+/*thumbnail in accordion 2 button*/
+.tn2 a{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width:100%;
+}
+/*section 3 in accordion*/
+.tn3{
+	padding: 20px;
+	height: 600px;
+}
+/*thumbnail in accordion 3 button*/
+.tn3 a{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width:100%;
+}
+/*********************WEBSITES.HTML********************/
+/*tab panels*/
+.tab-pane{
+	padding: 20px;
+}
+/*tab body subtitle*/
+.tab-pane h4{
+	margin-top: 50px
+}
+/*tab body p*/
+.tab-pane p{
+	margin-top: 50px
+}
+/*list of buttons*/
+#btnList{
+	margin-top: 50px;
+}
+/**/
+#js1{
+	margin-top: 80px;
+}
+#jsF a{
+	margin-top: 40px;
+}
