@@ -28,7 +28,7 @@
       </ul>
       </nav>
     </header>
-    <h2>Designing for the Web: Responsive Design from a Mobile First Perspective </h2>
+    <h2 id="webHeader">Designing for the Web: Responsive Design from a Mobile First Perspective </h2>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#bs" role="tab" data-toggle="tab">Bootstrap</a></li>
@@ -74,7 +74,7 @@
        </div>
        <div id="js1"class="row">
         <div class="col-sm-5">
-          <div class="embed-responsive embed-responsive-16by9">
+          <div id="vidEmber" class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/FEsxVOMS6iQ?rel=0"></iframe>
           </div>
         </div>
@@ -88,29 +88,31 @@
        </div>
       </div>
       <div role="tabpanel" class="row tab-pane" id="found">
-        <div class="col-sm-5">
+        <div class="col-sm-6">
           <h2>Prim Pooch</h2>
           <p>Prim Pooch is a fictional website I created during my sophomore year of school. It utilizes the responsive framework, Foundation. More than, design and using Foundation, this project was about using makes use of many of CSS3’s transitions and transforms. This project was about exploring CSS3 options more than designing a cohesive website</p>
-          <a target="_blank" href="http://joannamok.github.io/websites/dogCare/index.html" class="btn btn-primary btn-lg">Prim Pooch</a>
+          <a id="prim" target="_blank" href="http://joannamok.github.io/websites/dogCare/index.html" class="btn btn-primary btn-lg">Prim Pooch</a>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
           <img class="img-responsive" src="images/prim.png" alt="jewelry from Wire Geeks">
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="settings">
         <article class="row">
-      <h2>jQuery UX</h2>
-      <section class="col-sm-7">
+      <section class="col-sm-6">
         <!--video for jQuery project-->
-      <div class="embed-responsive embed-responsive-16by9">
+      <div id="jQvid" class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/S8G61Ypeszg?rel=0"></iframe>
       </div>
       </section>
+      <section class="col-sm-1"></section>
       <!--desc for jQuery project-->
       <section class="col-sm-5">
-        <p>This jQuery/JSON website is a project I did for school. If it were hosted on a server, users would have the ability to create an account, add and edit projects and login/logout. Here on my portfolio website, the backend is not connected to a server so it will not function properly with user inputs. Watch my YouTube for a demonstration of it connected to my Mamp. Click the links below to visit each individual page in the UX:</p>
+        <h2>jQuery and jQuery UI</h2>
+        <p id="jQp">This jQuery/JSON website is a project I did for school. If it were hosted on a server, users would have the ability to create an account, add and edit projects and login/logout. Here on my portfolio website, the backend is not connected to a server so it will not function properly with user inputs. Watch my YouTube for a demonstration of it connected to my Mamp. Click the links below to visit each individual page in the UX:</p>
         <!--box of links for jQUery Project-->
-        <div class="btn-group-vertical">
+        <div id="btns" class="btn-group-vertical">
           <a target="_blank" href="http://joannamok.github.io/websites/jQuery/index.html"class="btn btn-primary btn-lg">CTA Page</a>
           <a target="_blank" href="http://joannamok.github.io/websites/jQuery/signUp.html" class="btn btn-primary btn-lg">SignUp Page</a>
           <a target="_blank" href="http://joannamok.github.io/websites/jQuery/admin.html"class="btn btn-primary btn-lg">Admin Page</a>

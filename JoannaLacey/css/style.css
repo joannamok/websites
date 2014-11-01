@@ -21,6 +21,18 @@ h1,h2,h3,h4,h5{
 .btn-group-vertical{
 	width: 100%;
 }
+/*a links*/
+a{
+	color:#00739F;
+}
+/*active pill a links*/
+ .nav-pills>li.active>a{
+	background:#00739F;
+}
+/**/
+.nav-tabs>li.active>a{
+	color: #FD7400;
+}
 /*************INDEX.HTML***************************/
 /*top sections*/
 .sec{
@@ -152,6 +164,11 @@ h1,h2,h3,h4,h5{
 	width:100%;
 }
 /*********************WEBSITES.HTML********************/
+/*main header*/
+#webHeader{
+	margin-top: 50px;
+}
+/***YardSeller Tab***/
 /*tab panels*/
 .tab-pane{
 	padding: 20px;
@@ -168,10 +185,62 @@ h1,h2,h3,h4,h5{
 #btnList{
 	margin-top: 50px;
 }
-/**/
+/***Ember/Angular Tab***/
+/*section with ember*/
 #js1{
 	margin-top: 80px;
 }
-#jsF a{
+/*buttons on Angular tab*/
+#angular a{
+	margin-top: 40px;
+	width:100%;
+}
+/*ember video*/
+#vidEmber{
 	margin-top: 40px;
 }
+/***Foundation Tab***/
+/*p tag*/
+#jQp{
+	margin-top: 30px;
+}
+/*video*/
+#jQvid{
+	margin-top: 40px;
+}
+#btns{
+	margin-top: 30px;
+}
+/*button*/
+#prim{
+	margin-top:50px;
+	width:100%;
+}
+
+/*********************************CONTACT.HTML************************************************/
+/*title of page*/
+#contactTitle{
+	margin-top: 50px;
+}
+/*image*/
+#me{
+	border: 2px solid #00739F;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+/*info section*/
+#basic{
+	margin-top: 60px;
+}
+/*p before resume button*/
+#resumeP{
+	margin-top:30px;
+}
+/*button for resume*/
+#resumeBtn{
+	margin-top: 15px;
+}
+
+
+
